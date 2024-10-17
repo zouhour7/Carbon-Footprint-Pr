@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+}
+
+.banner{
+   background: url(../../assets/img/h.png); 
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+   position: relative;
+}
+.banner .waves{
+position: absolute;
+bottom: 0;
+width: 100%;
+left: 0;
+}
+.content{
+width: 400px;
+height: 500px;
+margin: 8% auto;
+background: #EADBC5;
+border-radius: 20px;
+position: relative;
+
+}
+.content form{
+    background: rgba(255, 255, 255, .3);
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+         
+    }
+form input{
+    width: 80%;
+    padding: 10px 5px;
+    margin:5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.btn-box{
+    width:100%;
+    margin: 30px auto;
+    text-align:center;
+
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#939c9a,#DFDFDF);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color:black;
+    cursor: pointer;
+    transition: 1s;
+}
+.textarea{
+    background-color: #eddcc7;
+padding: 1em;
+border-radius: 10px;
+border: 2px solid transparent;
+width: 90%;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #999;
+    font-weight: 700;
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./results.component.css">
+</head>
+<body>
+  <div class="container">
+  <div *ngIf="showResults">
+    <br/> 
+    <p>Congratulations already! Measuring your carbon footprint is the first step before reducing it.
+      Thanks to your answers, we will be able to estimate the details of your carbon footprint. 
+      Together, let's fight against climate change!</p> <br/><br/>
+    <h1>Calculated Results:</h1>
+    <p>Total Carbon Day: {{ totalCarbonDay }} KgCO<small>2e</small></p>
+    <br/> <br/>
+    <p>Total Carbon Week: {{ totalCarbonWeek }} KgCO<small>2e</small></p>
+    <br/> <br/>
+    <p>Total Carbon Year: {{ totalCarbonYear }} KgCO<small>2e</small></p>
+    <br/> <br/><br/>
+    <br/><br/> <br/>
+    <div class="btn-box">
+        <button type="button" (click)="gotohomepage()" >Home</button>
+        <button type="button" (click)="gotoconactpage()">Contact us</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.component.css">
+</head>
+<body>
+    <div class="container">
+        <header> <h1>Factory Data</h1></header>
+        <form (ngSubmit)="onSubmit()" action="http://localhost:8082/submit-industry" method="post">
+            <div class="form">
+              <div class="det">
+                <span class="title">General informations</span>
+                <div class="filds">
+                  <div class="inputF">
+                    <label>Owner name:</label>
+                    <input type="text" [(ngModel)]="formData.name" id="name" name="name" class="name" required>
+                  </div>
+                  <div class="inputF">
+                    <label>Factory name:</label>
+                    <input type="text" [(ngModel)]="formData.nameI" id="nameI" name="nameI" class="nameI"required>
+                  </div>
+                  <div class="inputF">
+                    <label>E-mail:</label>
+                    <input type="email" [(ngModel)]="formData.email" id="email" name="email" class="email"required>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="det">
+                <span class="title">Factory assets, Total of:</span>
+                <div class="filds">
+                  <div class="inputF">
+                    <label>Machines:</label>
+                    <input type="number" [(ngModel)]="formData.numberM" id="numberM" name="numberM" class="numberM"required>
+                  </div>
+                  <div class="inputF">
+                    <label>Lights:</label>
+                    <input type="number" [(ngModel)]="formData.numberL" id="numberL" name="numberL" class="numberL"required>
+                  </div>
+                  <div class="inputF">
+                    <label>Employees:</label>
+                    <input type="number" [(ngModel)]="formData.numberE" id="numberE" name="numberE" class="numberE"required>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="det1">
+                <span class="title">Factory Watts consumations</span>
+                <div class="filds">
+                  <div class="inputF">
+                    <label>Machines:</label>
+                    <input type="text" [(ngModel)]="formData.numberKW" id="numberKW" name="numberKW" class="numberKW" required><br>
+                  </div>
+                  <div class="inputF">
+                    <label>Lights:</label>
+                    <input type="number" [(ngModel)]="formData.numberKL" id="numberKL" name="numberKL" class="numberKL" required>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="det">
+                <span class="title">Working Hours</span>
+                <div class="filds">
+                  <div class="inputF">
+                    <label>Hours:</label>
+                    <input type="number" [(ngModel)]="formData.numberH" id="numberH" name="numberH" class="numberH" required>
+                  </div>
+                  <div class="inputF">
+                    <label>Days:</label>
+                    <input type="number" [(ngModel)]="formData.numberD" id="numberD" name="numberD" class="numberD" required>
+                  </div>
+                  <div class="inputF">
+                    <label>Vacation:</label>
+                    <input type="number" [(ngModel)]="formData.numberV" id="numberV" name="numberV" class="numberV" required>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              <small class="s">
+                NOTE: fill it like the following form:<br>
+                Watts:NB_machines_corresponding,
+                Watts:NB_machines_corresponding, etc.<br>
+                -> 1KW=0.21 KgCO2
+              </small>
+              <div class="btn-box">
+                <button type="button" (click)="gotohomepage()">Home</button>
+                <button type="submit">SEND</button>
+              </div>
+            </div>
+          </form>
+    </div>
+
+
+
+
+</body>
+</html>
+

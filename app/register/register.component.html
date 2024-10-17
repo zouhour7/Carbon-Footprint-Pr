@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.component.css">
+</head>
+<body>
+   <div class="wrapper">
+    <form (ngSubmit)="onSubmit()" action="http://localhost:8082/register" method="post">
+     <h1>SIGN UP</h1>
+     <div class="input-box">
+        <input type="text" placeholder=" industryName" [(ngModel)]="regData.nameIndustry" name="nameIndustry">
+      </div>
+        <div class="input-box">
+        <input type="password" placeholder="password required"  [(ngModel)]="regData.password" name="password">
+       
+     </div>
+      <div class="btn-box">
+        <button type="button" (click)="gotohomepage()">Home</button>
+        <button type="submit">Sign up</button>
+        
+    </div>
+    <div class="register-link">
+        <p>you have an account?
+            <a routerLink="/login">Login</a>
+        </p>
+
+    </div>
+    </form>
+   </div> 
+</body>
+</html>
+

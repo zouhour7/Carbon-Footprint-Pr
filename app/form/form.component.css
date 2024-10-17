@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+    outline: none;
+  }
+  body{
+     background: url(../../assets/img/cccccc.png) no-repeat center
+    center/ cover;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .container{
+    position: relative;
+    background: transparent;
+    max-width: 900px;
+    width: 100%; 
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: transparent;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1)    
+  }
+  .container header{
+    font-size: 20px;
+    font-weight: 600;
+    color:#9e9797;
+  
+  }
+  .container form{
+    position: relative; 
+    margin-top:16px;
+    min-height: 490px;
+    background-color:transparent ;
+  
+  }
+  .container form .det{
+    margin-top: 30px;
+  }
+  
+  .container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight:500;
+    margin:6px;
+    color: #000;
+  }
+  .container form .title{
+    margin-top: 10px;
+  }
+  .container form .filds{
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  }
+  .container form .s{
+    color: white;
+  }
+  form .fileds .inputF{
+  display: flex;
+  width: calc(100% / 3 - 15px) ;
+  flex-direction:column;
+  }
+  .inputF label{
+    font-size: 13px;
+    font-weight: 500;
+    color:#c5bebe;
+    margin: 4px 0;
+    position: relative;
+  
+  }
+  .inputF input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color:#333 ;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0 15px;
+    height:42px ;
+    margin:8px 0;
+  }
+  .inputF input :is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+  }
+  .btn-box{
+    width:100%;
+    margin: 30px auto;
+    text-align:center;
+  
+  }
+  form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right,#939c9a,#DFDFDF);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color:black;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
